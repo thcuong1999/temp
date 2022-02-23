@@ -1,0 +1,5 @@
+- 1 building co nhieu` floor, 1 floor thuoc 1 building
+- moi floor co nhieu`group, moi group thuoc 1 floor
+- moi group (DC) co nhieu team, moi team thuoc 1 DC/group
+- moi team co 1 project, 1 project thuoc 1 team. EX: project A thuoc team A, project B thuoc team B
+- 

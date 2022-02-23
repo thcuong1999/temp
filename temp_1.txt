@@ -1,0 +1,42 @@
+Building collection:
+    - name: String
+    - admin: User
+
+Floor collection:
+    - name: String
+    - buildingId: Building
+    - admin: User
+
+Group collection:
+    - title: String
+    - buidingId: Building
+
+Team collection:
+    -
+
+Project collection:
+    - title: String
+    - groupId: Group
+
+Shape collection:
+    - staff: User
+    - item: [String]
+    - floorId: Floor
+    - projectId: Project
+
+User collection
+    - name: String
+    - username: String
+    - password: String
+    - isAdmin: Boolean
+
+UserPlace: 
+    - userId: User
+    - floorId: Floor
+    - buildingId: Building
+
+UserWork
+    - userId: User
+    - groupId: Group
+    - projectId: Project
+
