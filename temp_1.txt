@@ -1,3 +1,6 @@
+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
+https://www.mongodb.com/blog/post/6-rules-of-thumb-for-mongodb-schema-design-part-1
+
 Building collection:
     - name: String
     - admin: User
