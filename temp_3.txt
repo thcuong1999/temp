@@ -1,0 +1,65 @@
+Admin collection:
+	- name: String
+	- username: String
+	- password: String
+	- is_building_admin: Boolean
+	- building: Building
+	
+Employee collection:
+	- name: String
+	- username: String
+	- password: String
+	- place:
+		+ building: Building
+		+ floor: Floor
+		+ group: Group
+	- working_on:
+		+ project: Project
+		+ team: Team
+	
+Building collection:
+	- name: String
+	- admin: Admin
+	- floors: Floor[]
+	- groups: Group[]
+	- teams: Team[]
+	- projects: Project[]
+	
+Floor collection:
+	- name: String
+	- building: Building
+	- groups: Group[]
+	- teams: Team[]
+	- projects: Project[]
+	
+Group collection:
+	- name: String
+	- floor: Floor
+	- teams: Team[]
+	- projects: Project[]
+	
+Team collection:
+	- name: String
+	- group: Group
+	- project: Project
+	- users: User[]
+
+Project collection:
+	- name: String
+	- team: Team
+	- users: User[]
+	
+Shape collection:
+	- giữ nguyên
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

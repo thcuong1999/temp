@@ -1,8 +1,14 @@
-- 1 building có nhiều floor, 1 floor thuộc 1 building
-- mỗi floor co nhieu`group/DC, mỗi group/DC thuoc 1 floor
-- mỗi group/DC co nhieu team, mỗi team thuoc 1 group/DC
-- mỗi team co 1 project, 1 project thuoc 1 team. -> Cũng lưu lại số project 1 team đã hoàn thành
-- mỗi team có nhiều user, mỗi user thuộc 1 team -> lưu lại user đã từng ở 1 team cụ thể
-- mỗi user thuộc 1 team -> lưu lại danh sách team mà user từng tham gia
-- mỗi user thuộc 1 project, mỗi project thuộc 1 user, mỗi project thuộc 1 team
-- một user 1 thời điểm chỉ ở 1 place -> lưu lại lịch sử place từng ở // current_place vs previous_places[]
++ 1 building_admin quản lý 1 building, một building thuộc 1 building_admin // 1 --- 1
++ 1 building có nhiều floor, 1 floor thuộc 1 building // 1 --- nhiều
++ mỗi floor co nhieu`group/DC, mỗi group/DC thuoc 1 floor // 1 --- nhiều
++ mỗi group/DC co nhieu team, mỗi team thuoc 1 group/DC // 1 --- nhiều
++ mỗi team co 1 project, 1 project thuoc 1 team. // 1 --- 1 -> Cũng lưu lại số project 1 team đã hoàn thành
++ mỗi team có nhiều user, mỗi user thuộc 1 team -> lưu lại user đã từng ở 1 team cụ thể
++ mỗi user thuộc 1 team -> lưu lại danh sách team mà user từng tham gia
++ mỗi user thuộc 1 project, mỗi project thuộc 1 user, mỗi project thuộc 1 team
++ một user 1 thời điểm chỉ ở 1 place -> lưu lại lịch sử place từng ở // current_place vs previous_places[]
+
+=================================
+Admin cấp cao:
+	+ Tạo building tạo building_admin => gán building_admin cho 1 building
+	+ Cập nhật / gán lại building vào 1 building_admin mới => kết cấu building, floor,... vẫn giữ nguyên

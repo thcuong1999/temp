@@ -1,5 +1,11 @@
-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
+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
 https://www.mongodb.com/blog/post/6-rules-of-thumb-for-mongodb-schema-design-part-1
+compromise: su thoa hiep
+demand: yeu cau, nhu cau
+
+
+Admin collection:
+    - is_building_admin
 
 Building collection:
     - name: String
@@ -10,7 +16,7 @@ Floor collection:
     - buildingId: Building
     - admin: User
 
-Group collection:
+Group/DC collection:
     - title: String
     - buidingId: Building
 
@@ -20,18 +26,20 @@ Team collection:
 Project collection:
     - title: String
     - groupId: Group
+    
+User collection
+    - name: String
+    - username: String
+    - password: String
+    - isAdmin: Boolean
+
+====================================================
 
 Shape collection:
     - staff: User
     - item: [String]
     - floorId: Floor
     - projectId: Project
-
-User collection
-    - name: String
-    - username: String
-    - password: String
-    - isAdmin: Boolean
 
 UserPlace: 
     - userId: User
