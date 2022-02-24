@@ -9,13 +9,11 @@ Employee collection:
 	- name: String
 	- username: String
 	- password: String
-	- place:
-		+ building: Building
-		+ floor: Floor
-		+ group: Group
-	- working_on:
-		+ project: Project
-		+ team: Team
+	- building: Building
+	- floor: Floor
+	- group: Group
+	- project: Project
+	- team: Team
 	
 Building collection:
 	- name: String
@@ -24,32 +22,36 @@ Building collection:
 	- groups: Group[]
 	- teams: Team[]
 	- projects: Project[]
+	- employees: Employee[]
 	
 Floor collection:
 	- name: String
-	- building: Building
+	- building: Buildinguyên
 	- groups: Group[]
 	- teams: Team[]
 	- projects: Project[]
+	- employees: Employee[]
 	
 Group collection:
 	- name: String
 	- floor: Floor
 	- teams: Team[]
 	- projects: Project[]
+	- employees: Employee[]
 	
 Team collection:
 	- name: String
 	- group: Group
 	- project: Project
 	- users: User[]
+	- employees: Employee[]
 
 Project collection:
 	- name: String
 	- team: Team
-	- users: User[]
+	- employees: Employee[]
 	
-Shape collection:
+Shape collection: Giữ nguyên
 	- giữ nguyên
 	
 
