@@ -1,0 +1,65 @@
+Admin collection: // -> admin cap cao
+	- name: String
+	- username: String
+	- password: String
+
+Employee collection:
+	- name: String
+	- username: String
+	- password: String
+	- is_admin: Boolean // cho biet admin CAP CAO
+	- building: Building
+	- floor: Floor
+	- group: Group
+	- project: Project
+	- team: Team
+	
+Building collection:
+	- name: String
+	- admin: Employee
+	- floors: Floor[]
+	- groups: Group[]
+	- teams: Team[]
+	- projects: Project[]
+	- employees: Employee[]
+	
+Floor collection:
+	- name: String
+	- building: Building
+	- groups: Group[]
+	- teams: Team[]
+	- projects: Project[]
+	- employees: Employee[]
+	
+Group collection:
+	- name: String
+	- floor: Floor
+	- teams: Team[]
+	- projects: Project[]
+	- employees: Employee[]
+	
+Team collection:
+	- name: String
+	- group: Group
+	- project: Project
+	- employees: Employee[]
+
+Project collection:
+	- name: String
+	- team: Team
+	- employees: Employee[]
+	
+Shape collection: Giữ nguyên
+	- giữ nguyên
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
