@@ -1,5 +1,8 @@
-- 1 building co nhieu` floor, 1 floor thuoc 1 building
-- moi floor co nhieu`group/DC, moi group/DC thuoc 1 floor
-- moi group/DC co nhieu team, moi team thuoc 1 group/DC
-- moi team co 1 project, 1 project thuoc 1 team. 
-- moi user co nhieu team, nhung chi active 1 team - moi team co nhieu user
+- 1 building có nhiều floor, 1 floor thuộc 1 building
+- mỗi floor co nhieu`group/DC, mỗi group/DC thuoc 1 floor
+- mỗi group/DC co nhieu team, mỗi team thuoc 1 group/DC
+- mỗi team co 1 project, 1 project thuoc 1 team. -> Cũng lưu lại số project 1 team đã hoàn thành
+- mỗi team có nhiều user, mỗi user thuộc 1 team -> lưu lại user đã từng ở 1 team cụ thể
+- mỗi user thuộc 1 team -> lưu lại danh sách team mà user từng tham gia
+- mỗi user thuộc 1 project, mỗi project thuộc 1 user, mỗi project thuộc 1 team
+- một user 1 thời điểm chỉ ở 1 place -> lưu lại lịch sử place từng ở // current_place vs previous_places[]
