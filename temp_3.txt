@@ -2,7 +2,7 @@ Admin collection:
 	- name: String
 	- username: String
 	- password: String
-	- is_building_admin: Boolean
+	- is_admin: Boolean
 	- building: Building
 	
 Employee collection:
@@ -18,6 +18,7 @@ Employee collection:
 Building collection:
 	- name: String
 	- admin: Admin
+	- employee_admin: Employee
 	- floors: Floor[]
 	- groups: Group[]
 	- teams: Team[]
@@ -26,7 +27,7 @@ Building collection:
 	
 Floor collection:
 	- name: String
-	- building: Buildinguyên
+	- building: Building
 	- groups: Group[]
 	- teams: Team[]
 	- projects: Project[]
