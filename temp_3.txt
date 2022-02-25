@@ -7,7 +7,7 @@ Employee collection:
 	- name: String
 	- username: String
 	- password: String
-	- is_admin: Boolean // cho biet admin CAP CAO
+	- is_admin: Boolean // cho biet admin building
 	- building: Building
 	- floor: Floor
 	- group: Group
@@ -26,6 +26,15 @@ Building collection:
 Floor collection:
 	- name: String
 	- building: Building
+	- rooms: Room[]
+	- groups: Group[]
+	- teams: Team[]
+	- projects: Project[]
+	- employees: Employee[]
+	
+Room collection:
+	- name: String
+	- floor: Floor
 	- groups: Group[]
 	- teams: Team[]
 	- projects: Project[]
@@ -53,11 +62,13 @@ Shape collection: Giữ nguyên
 	- giữ nguyên
 	
 
-	
-	
-	
-	
-	
+========================
+
+service => truy vấn
+controller => dùng trong route, khi vào url này thì controller nào handle
+exports.__ >< module.exports
+export const __ >< export default
+require >< import
 	
 	
 	

@@ -12,3 +12,42 @@
 Admin cấp cao:
 	+ Tạo building tạo building_admin => gán building_admin cho 1 building
 	+ Cập nhật / gán lại building vào 1 building_admin mới => kết cấu building, floor,... vẫn giữ nguyên
+
+=======================================
+
+- Building Lab6 > Floor 9 > Room C9 > Group DC4
+- upload ảnh cho room -> để biết sơ đồ của room đó
+- upload ảnh cho từng floor -> để biết sơ đồ của tầng đó
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

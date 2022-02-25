@@ -1,4 +1,4 @@
-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
+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
 https://www.mongodb.com/blog/post/6-rules-of-thumb-for-mongodb-schema-design-part-1
 compromise: su thoa hiep
 demand: yeu cau, nhu cau
@@ -6,6 +6,7 @@ insight: cái nhìn sâu sắc
 circumstances: trường hợp
 viable option: lựa chọn khả thi
 versatile: linh hoạt
+consult: tham khao y kien
 
 
 Admin collection:
@@ -25,11 +26,19 @@ Group/DC collection:
     - buidingId: Building
 
 Team collection:
-    -
+    - ...
 
 Project collection:
     - title: String
     - groupId: Group
+
+Shape collection:
+    - staff: User
+    - item: [String]
+    - floorId: Floor
+    - projectId: Project
+    
+====================================================
     
 User collection
     - name: String
@@ -37,13 +46,6 @@ User collection
     - password: String
     - isAdmin: Boolean
 
-====================================================
-
-Shape collection:
-    - staff: User
-    - item: [String]
-    - floorId: Floor
-    - projectId: Project
 
 UserPlace: 
     - userId: User

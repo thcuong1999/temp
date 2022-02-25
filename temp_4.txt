@@ -1,0 +1,85 @@
+Admin cấp cao:
+	- cập nhật thông tin cá nhân
+	- quản lý Employee
+		+ thêm employee
+		+ cập nhật employee
+		+ xóa employee
+		+ tìm kiếm employee
+			* tìm theo tên
+			* tìm theo username
+			* tìm theo building
+			* tìm theo floor
+			* tìm theo group
+			* tìm theo project
+			* tìm theo team
+	- quản lý building
+		+ thêm building
+		+ cập nhật building
+		+ xóa building
+		+ tìm kiếm building
+			* tìm theo tên
+			* tìm theo admin
+			* tìm theo floor
+			* tìm theo group
+			* tìm theo team
+			* tìm theo project
+			* tìm theo employee
+	- quản lý floor
+		+ thêm floor
+		+ cập nhật floor
+		+ xóa floor
+		+ tìm kiếm floor
+			* tìm theo tên
+			* tìm theo building
+			* tìm theo group
+			* tìm theo team
+			* tìm theo project
+			* tìm theo employee
+		
+	- quản lý group
+		+ thêm group
+		+ cập nhật group
+		+ xóa group
+		+ tìm kiếm group
+			* tìm kiếm theo tên
+			* tìm kiếm theo floor
+			* tìm kiếm theo team
+			* tìm kiếm theo projects
+			* tìm kiếm theo employee
+		
+	- quản lý team
+		+ thêm team
+		+ cập nhật team
+		+ xóa team
+		+ tìm kiếm team
+			* tìm theo tên
+			* tìm theo group
+			* tìm theo project
+			* tìm theo employee
+	- quản lý project
+		+ thêm project
+		+ cập nhật project
+		+ xóa project
+		+ tìm kiếm project
+			* tìm theo tên
+			* tìm theo team
+			* tìm theo employee
+	- quản lý shape
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
